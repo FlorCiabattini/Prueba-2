@@ -1,0 +1,309 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+/* FONTS
+font-family: 'Oswald', sans-serif; */
+
+
+/*---------- GENERAL ----------*/
+
+/* BODY */
+
+body{
+    font-family: 'Oswald', sans-serif;
+    color: #333;
+    background: #e1f0eb;
+    line-height: 1.6em;
+    flex-direction: column;
+    width: 100%;
+    display: flex;
+    margin-bottom: 0px;
+    margin: 0%;
+    padding: 0%;
+    min-height: 100vh;
+}
+
+p{
+    margin: 1.6em;
+}
+
+.container{
+    width: 85%;
+    max-width: 850px;
+    margin: auto;
+    padding-top: 1rem;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+h1{
+
+    font-size: 40px;
+    text-align: center;
+    line-height: 1.3em;
+    padding: 20px 0;
+
+}
+
+h2{
+    text-align: center;
+    color: beige;
+    padding: 4rem 0;
+}
+
+/* BARRA NAVEGACION */
+
+.header {
+    z-index: 1;
+    background: #d4e9e2;
+    color: #333;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    padding: 0.3rem 0;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.header a{
+    color: #333;
+    text-decoration: none;
+}
+
+.logoNatti__png{
+    width: 198px;
+    height: 198px;   
+}
+
+.navigation__bar{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navigation__bar__list{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navigation__bar__list__item{
+    display: inline-block;
+    padding: 10px 50px 10px 50px;
+    font-size: 25px;
+}
+
+.navigation__bar ul li a{
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all 0.4s linear;
+    border-radius: 5px;
+}
+
+.navigation__bar ul li a:hover{
+    background:#b6feeb;
+}
+
+/* MAIN */
+.main{
+    padding-top: 16rem;
+    position: relative;
+    margin-bottom: 10%;
+}
+
+
+/* FOOTER */
+
+.footer{
+    color: #bbb0b0;
+    background: #333;
+    padding: 1em;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    
+    
+
+}
+
+.container__footer{
+    border: dashed;
+    border-width: 5px;
+    height: 300px;
+    width: 100%;
+    
+}
+.footer h2{
+    font-size: 35px;
+}
+
+
+.social__media__list__item{
+    display: inline-grid;
+    padding: 10px 50px 10px 50px;
+    margin-right: -10px;
+    
+
+    
+}
+
+
+/*---------- INDEX ----------*/
+
+/* HEADER */
+
+.main__image{
+    right: 0%;
+    left: 0%;
+    width: 100%;
+}
+
+.index__gallery{
+    z-index: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    width: 95%;
+    margin: auto;
+    grid-gap: 10px;
+    padding: 40px;
+    overflow: hidden;
+}
+.index__gallery a{
+    display: block;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+}
+.index__gallery img{
+    width: 100%;
+    vertical-align: top;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+/*---------- GALERIA ----------*/
+
+.gallery{
+    z-index: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    width: 90%;
+    margin: auto;
+    grid-gap: 10px;
+    padding: 40px;
+    overflow: hidden;
+}
+
+.gallery a{
+    display: block;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+}
+
+.gallery img{
+    width: 100%;
+    vertical-align: top;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.gallery a:hover img{
+    filter: blur(2px);
+    transform: rotate(10deg) scale(1.3);
+}
+
+/*---------- NATTI R ---------- */
+.container__natti{
+    padding-top: 1rem;
+    flex-direction: column;
+    text-align: center;
+    width: 85%;
+    max-width: 850px;
+    margin: auto;
+    margin-bottom: 15%;
+}
+
+/*---------- SOBRE MI ----------*/
+
+.natti__image{
+    text-align: center;
+    height: 50%;
+    width: 50%;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+}
+
+
+/*---------- CONTACTO ----------*/
+
+.form {
+    width: 90%;
+    margin: auto;
+    max-width: 400px;
+    border-radius: 1em;
+    padding: 3.5em 1.5em;
+}
+    
+.formContainer {
+    width: 100%;
+    display: grid;
+    gap: 1em;
+    grid-auto-columns: 100%;
+}
+    
+.formTitle {
+
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: .4em;
+}
+
+.formInput {
+    font-family: inherit;
+    font-size: 1rem;
+    padding: .8em 16px;
+    outline: none;
+    border: none;
+    border: 1px solid #bbb0b0;
+    border-radius: 0.2 em;
+}
+
+.formInput--message {
+    resize: none;
+    padding: 1.8em 1em;
+    margin-bottom: .5em;
+}
+
+.formCta {
+    font-family: inherit;
+    font-size: 1rem;
+    background-color: #089fe0;
+    color: #fff;
+    border: none;
+    font-weight: 300;
+    padding: .7em 0;
+    border-radius: .2em;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+
+@media only screen and (max-width: 500px){
+    .container__footer {
+        height: auto;
+    }
+}
