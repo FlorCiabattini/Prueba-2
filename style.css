@@ -301,6 +301,34 @@ h2{
     font-weight: 400;
 }
 
+.logoNatti__png{
+    text-align: center;
+    animation: rotarTitulo;
+    animation-iteration-count: infinite;
+    /* animation-timing-function: ; */
+    animation-duration: 4s;
+    animation-delay: 2s;
+}
+
+@keyframes rotarTitulo{
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(45deg);
+    }
+    50%{
+        transform: rotate(90deg);
+    }
+    75%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
 
 @media only screen and (max-width: 500px){
     .container__footer {
